@@ -2,15 +2,272 @@
 <html>
 <head lang="uk">
     <meta charset="UTF-8">
-    <title>My Page</title>
-
-
+    <title>Buy list</title>
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+        .shop {
+            border-radius: 5px;
+            border: 1px solid rgba(211, 211, 211, .7);
+            background: white;
+            float: left;
+            margin-top: 5%;
+            margin-left: 20.5%;
+            width: 40%;
+            height: 225px;
+            box-shadow: 0 3px 8px gray;
+        }
+        .list {
+            border-radius: 5px;
+            border: 1px solid rgba(211, 211, 211, .7);
+            background: white;
+            float: right;
+            margin-top: 5.3%;
+            margin-right: 20.5%;
+            width: 17.5%;
+            height: 190px;
+            box-shadow: 0 3px 8px gray;
+        }
+        .find {
+            border-radius: 5px 0px 0px 5px;
+            background: white;
+            border-top: 1px solid lightgrey;
+            border-bottom: 1px solid lightgrey;
+            border-left: 1px solid lightgrey;
+            float: left;
+            margin-top: 2.5%;
+            margin-left: 2.5%;
+            width: 82%;
+            height: 35px;
+        }
+        .add {
+            border-radius: 0px 5px 5px 0px;
+            background: dodgerblue;
+            float: right;
+            margin-top: 2.5%;
+            margin-right: 2.67%;
+            width: 12.7%;
+            height: 35px;
+            box-shadow: 0 2px 0px royalblue;
+            text-align:center;
+        }
+        .productcontainer {
+            background:	transparent;
+            clear: both;
+            border-top: 1px solid lightgrey;
+            margin-top: 9%;
+            width:	100%;
+            height: 22%;
+        }
+        .productcontainernew {
+            background:	transparent;
+            clear: both;
+            border-top: 1px solid lightgrey;
+            margin-top: 1px;
+            width:	100%;
+            height: 22%;
+        }
+        .numberbox {
+            border-radius: 5px;
+            background: lightgrey;
+            display: inline-block;
+            height: 25px;
+            width: 25px;
+            text-align:center;
+        }
+        .dotminusinactive {
+            height: 30px;
+            width: 30px;
+            background-color: #DB2828;
+            opacity: 50%;
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: 25%;
+            box-shadow: inset 0 -3px 0 rgba(34,36,38,.15);
+            text-align:center;
+        }
+        .dotminusactive {
+            height: 30px;
+            width: 30px;
+            background-color: #DB2828;
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: 25%;
+            box-shadow: inset 0 -3px 0 rgba(34,36,38,.15);
+            text-align:center;
+        }
+        .dotplus {
+            height: 30px;
+            width: 30px;
+            background-color: #21BA45;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: inset 0 -3px 0 rgba(34,36,38,.15);
+            text-align:center;
+        }
+        .dotproduct {
+            height: 15px;
+            width: 15px;
+            background-color: #F2711C;
+            border-radius: 50%;
+            display: inline-block;
+            text-align:center;
+        }
+        .buy {
+            border-radius: 5px;
+            border: 1px solid lightgrey;
+            background: rgba(0,0,0,.05);
+            color:rgba(0,0,0,.6);
+            font-size: 80%;
+            display: inline-block;
+            height: 30px;
+            width: 90px;
+            margin-top: 0.5%;
+            margin-left: 32%;
+            box-shadow: inset 0 -3px 0 rgba(34,36,38,.15);
+            text-align:center;
+        }
+        .delete {
+            border-radius: 5px;
+            background: #DB2828;
+            float: right;
+            height: 30px;
+            width: 30px;
+            margin-top: 0.5%;
+            margin-right: 2%;
+            box-shadow: inset 0 -3px 0 rgba(34,36,38,.15);
+            text-align:center;
+        }
+        .productstobuybox {
+            border-radius: 5px;
+            background: rgba(211, 211, 211, .5);
+            display: inline-block;
+            margin-top: 5%;
+            margin-left: 5%;
+            height: 12%;
+            width: 25%;
+            text-align:center;
+        }
+        .productstobuynewbox {
+            border-radius: 5px;
+            background: rgba(211, 211, 211, .5);
+            display: inline-block;
+            margin-top: 5%;
+            margin-left: 0.5%;
+            height: 12%;
+            width: 25%;
+            text-align:center;
+        }
+    </style>
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-	<span class="product-item">
-		Apple
-		<span class="amount">4</span>
-	</span>
+<div class="shop">
+    <div class="find">
+        <span class="findstyle">Назва товару</span>
+    </div>
+    <div class="add">
+        <span class="addstyle">Додати</span>
+    </div>
+    <div class="productcontainer">
+        <span class="productname">
+            Виноград
+        </span>
+        <span class="dotminusinactive">
+            <span class="addstyle">-</span>
+        </span>
+        <span class="numberbox">
+            <span class="productnumber">
+            1
+            </span>
+        </span>
+        <span class="dotplus">
+            <span class="addstyle">+</span>
+        </span>
+        <span class="buy">
+            <span class="buystyle">
+            Куплено
+            </span>
+        </span>
+        <span class="delete">
+            <span class="addstyle">x</span>
+        </span>
+
+    </div>
+    <div class="productcontainernew">
+        <span class="productname">
+            Персики
+        </span>
+        <span class="dotminusactive">
+            <span class="addstyle">-</span>
+        </span>
+        <span class="numberbox">
+            <span class="productnumber">
+            3
+            </span>
+        </span>
+        <span class="dotplus">
+            <span class="addstyle">+</span>
+        </span>
+        <span class="buy">
+            <span class="buystyle">
+            Куплено
+            </span>
+        </span>
+        <span class="delete">
+            <span class="addstyle">x</span>
+        </span>
+
+    </div>
+    <div class="productcontainernew">
+        <span class="productname">
+            Апельсини
+        </span>
+        <span class="dotminusactive">
+            <span class="addstyle">-</span>
+        </span>
+        <span class="numberbox">
+            <span class="productnumber">
+            8
+            </span>
+        </span>
+        <span class="dotplus">
+            <span class="addstyle">+</span>
+        </span>
+        <span class="buy">
+            <span class="buystyle">
+            Куплено
+            </span>
+        </span>
+        <span class="delete">
+            <span class="addstyle">x</span>
+        </span>
+
+    </div>
+</div>
+<div class="list">
+    <span class="listinfo">
+            Залишилося
+    </span>
+    <span class="productstobuybox">
+            <span class="buyingproducts">Виноград <span class="dotproduct buyingproductsnumber">
+            1
+        </span></span>
+    </span>
+    <span class="productstobuynewbox">
+            <span class="buyingproducts">Персики <span class="dotproduct buyingproductsnumber">
+            3
+        </span></span>
+    </span>
+    <span class="productstobuynewbox">
+            <span class="buyingproducts">Апельсини <span class="dotproduct buyingproductsnumber">
+            8
+        </span></span>
+    </span>
+    <span class="listinfobought">
+            Куплено
+    </span>
+</div>
 </body>
 </html>
