@@ -1,17 +1,59 @@
-.product-item {
-	background-color: gray;
-	display: inline-block;
-	height: 25px;
-	padding: 5px;
-	border-radius: 5px;
+.findstyle{
+    font-family:	"Arial";
+    font-size: 87.5%;
+    display: inline-block;
+    padding: 1.6%;
+    opacity: 0.5;
+}
+.addstyle{
+    font-family:	"Arial";
+    font-size: 125%;
+    display: inline-block;
+    color: white;
+    padding-top: 7%;
+}
+.productname{
+    font-family:	"Arial";
+    font-size: 90%;
+    display: inline-block;
+    width: 50px;
+    padding: 1.5%;
+}
+.productnumber{
+    font-family:	"Arial";
+    font-size: 80%;
+    display: inline-block;
+    margin-top: 20%;
+}
+.buystyle{
+    font-family:	"Arial";
+    display: inline-block;
+    margin-top: 10%;
 }
 
-.amount {
-	background-color: yellow;
-	border-radius: 10px;
-	
-	display: inline-block;
-	height: 20px;
-	width: 20px;
-	text-align: center;
+.listinfo{
+    font-family:	"Arial";
+    font-size: 135%;
+    display: block;
+    padding: 4%;
+    border-bottom: 1px solid lightgrey;
+}
+.listinfobought{
+    font-family:	"Arial";
+    font-size: 135%;
+    display: block;
+    padding: 4%;
+    margin-top: 4%;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+.buyingproducts{
+    font-family:	"Arial";
+    font-size: 70%;
+    display: inline-block;
+}
+.buyingproductsnumber{
+    font-family:	"Arial";
+    color: white;
+    display: inline-block;
 }
