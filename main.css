@@ -12,6 +12,13 @@
     color: white;
     padding-top: 7%;
 }
+.addstyledelete{
+    font-family:	"Arial";
+    font-size: 80%;
+    display: inline-block;
+    color: white;
+    padding-top: 25%;
+}
 .productname{
     font-family:	"Arial";
     font-size: 90%;
